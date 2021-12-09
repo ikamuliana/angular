@@ -1,0 +1,15 @@
+<p>form works!</p>
+
+<form (ngSubmit) = "addTodo(todoForm)" #todoForm="ngForm">
+    <div>
+        Task :
+        <input type="text" name="task" id="task" [(ngModel)]="task"/>
+    </div>
+
+    <div>
+        Category :
+        <input type="text" name="category" id="category" [(ngModel)]="category"/>
+    </div>
+
+    <input type="submit" value="Add Task to List">
+</form>
